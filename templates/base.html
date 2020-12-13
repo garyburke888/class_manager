@@ -17,7 +17,7 @@
         <!-- top navbar -->
 		<nav class="nav-extended light-blue darken-1">
 			<div class="nav-wrapper">
-				<a href="{{ url_for('get_classes') }}" class="brand-logo">Class Manager</a>
+				<a href="{{ url_for('get_classes') }}" class="brand-logo center">eClass</a>
 				<a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
 				<ul class="right hide-on-med-and-down">
 					<li><a href="{{ url_for('get_classes') }}">Home</a></li>
@@ -36,7 +36,7 @@
 
         <!-- mobile sidenav -->
 		<ul class="sidenav" id="mobile-demo">
-            <li><h4 class="center-align light-blue-text text-darken 4">Class Manager</h4></li>
+            <li><h4 class="center-align light-blue-text text-darken 4">eClass</h4></li>
             <li><a href="{{ url_for('get_classes') }}">Home</a></li>
             {% if session.user %}
                 <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
