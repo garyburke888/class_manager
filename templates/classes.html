@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class Manager</title>
-</head>
-<body>
-    {% for class in classes %}
+{% extends "base.html" %}
+{% block content %}
+
+    <h2>I'm extending the base template!</h2>
+
+{% for class in classes %}
         {{ class.class_name }}<br>
         {{ class.category_name }}<br>
         {{ class.class_description }}<br>
@@ -14,6 +11,5 @@
         {{ class.class_date }}<br>
         {{ class.class_time }}<br>
     {% endfor %}
-</body>
-</html>
-</html>
+
+{% endblock %}
